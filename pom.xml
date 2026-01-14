@@ -29,8 +29,6 @@
             <id>codemc</id>
             <url>https://repo.codemc.io/repository/maven-public/</url>
         </repository>
-		<repositories>
-
     <repository>
         <id>codemc</id>
         <url>https://repo.codemc.io/repository/maven-public/</url>
@@ -50,8 +48,6 @@
         <id>sonatype</id>
         <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
     </repository>
-
-</repositories>
 
     </repositories>
 
