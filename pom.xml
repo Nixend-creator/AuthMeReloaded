@@ -29,10 +29,6 @@
             <id>codemc</id>
             <url>https://repo.codemc.io/repository/maven-public/</url>
         </repository>
-    <repository>
-        <id>codemc</id>
-        <url>https://repo.codemc.io/repository/maven-public/</url>
-    </repository>
 
     <repository>
         <id>papermc</id>
