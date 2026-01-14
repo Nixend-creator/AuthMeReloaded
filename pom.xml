@@ -34,9 +34,9 @@
             <url>https://repo.papermc.io/repository/maven-public/</url>
         </repository>
         <repository>
-            <id>jitpack</id>
-            <url>https://jitpack.io</url>
-        </repository>
+		    <id>jitpack.io</id>
+		    <url>https://jitpack.io</url>
+		</repository>
         <repository>
             <id>sonatype</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
@@ -150,6 +150,11 @@
             <artifactId>javax.annotation-api</artifactId>
             <version>1.3.2</version>
         </dependency>
+		<dependency>
+			<groupId>com.github.Nixend-creator</groupId>
+			<artifactId>AuthMeReloaded</artifactId>
+			<version>-SNAPSHOT</version>
+	</dependency>
 
     </dependencies>
 
