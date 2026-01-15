@@ -35,10 +35,62 @@
             <id>sonatype</id>
             <url>https://s01.oss.sonatype.org/content/repositories/snapshots/</url>
         </repository>
+		<repository>
+    <id>essentials-releases</id>
+    <url>https://repo.essentialsx.net/releases/</url>
+</repository>
+<repository>
+    <id>onarandombox</id>
+    <url>https://repo.onarandombox.com/content/groups/public/</url>
+</repository>
     </repositories>
 
     <!-- ===================== DEPENDENCIES ===================== -->
     <dependencies>
+	<!-- EssentialsX -->
+<dependency>
+    <groupId>net.essentialsx</groupId>
+    <artifactId>EssentialsX</artifactId>
+    <version>2.21.0</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- Multiverse-Core -->
+<dependency>
+    <groupId>com.onarandombox.multiversecore</groupId>
+    <artifactId>Multiverse-Core</artifactId>
+    <version>4.3.1</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- ProtocolLib -->
+<dependency>
+    <groupId>com.comphenix.protocol</groupId>
+    <artifactId>ProtocolLib</artifactId>
+    <version>5.2.0</version>
+    <scope>provided</scope>
+</dependency>
+
+<!-- Google Authenticator -->
+<dependency>
+    <groupId>com.warrenstrange</groupId>
+    <artifactId>googleauth</artifactId>
+    <version>1.5.0</version>
+</dependency>
+
+<!-- Apache Commons Email -->
+<dependency>
+    <groupId>org.apache.commons</groupId>
+    <artifactId>commons-email</artifactId>
+    <version>1.5</version>
+</dependency>
+
+<!-- Java Activation Framework (для старых версий JavaMail) -->
+<dependency>
+    <groupId>javax.activation</groupId>
+    <artifactId>activation</artifactId>
+    <version>1.1.1</version>
+</dependency>
         <!-- Paper API (вместо Spigot) -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
