@@ -9,17 +9,15 @@
     <groupId>fr.xephi</groupId>
     <artifactId>authme</artifactId>
     <version>5.7.0</version>
-
     <name>AuthMeReloaded</name>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <java.version>17</java.version>
-        <maven.compiler.release>17</maven.compiler.release>
+        <java.version>21</java.version>
+        <maven.compiler.release>21</maven.compiler.release>
     </properties>
 
     <!-- ===================== REPOSITORIES ===================== -->
-
     <repositories>
         <repository>
             <id>papermc</id>
@@ -40,9 +38,8 @@
     </repositories>
 
     <!-- ===================== DEPENDENCIES ===================== -->
-
     <dependencies>
-        <!-- Paper API (вместо Spigot API) -->
+        <!-- Paper API (вместо Spigot) -->
         <dependency>
             <groupId>io.papermc.paper</groupId>
             <artifactId>paper-api</artifactId>
@@ -110,10 +107,7 @@
             <version>1.4.1</version>
         </dependency>
 
-        <!-- DataSource Columns -->
-        
-
-        <!-- Similarity -->
+        <!-- String Similarity -->
         <dependency>
             <groupId>net.ricecode</groupId>
             <artifactId>string-similarity</artifactId>
@@ -127,36 +121,23 @@
             <version>4.2.0</version>
         </dependency>
 
-        <!-- Javax Inject -->
+        <!-- JSR-330 Annotations -->
         <dependency>
             <groupId>javax.inject</groupId>
             <artifactId>javax.inject</artifactId>
             <version>1</version>
         </dependency>
-
-        <!-- Javax Annotation -->
         <dependency>
             <groupId>javax.annotation</groupId>
             <artifactId>javax.annotation-api</artifactId>
             <version>1.3.2</version>
         </dependency>
-
-        <!-- УДАЛЕНО: некорректная самоссылающаяся зависимость -->
-        <!--
-        <dependency>
-            <groupId>com.github.Nixend-creator</groupId>
-            <artifactId>AuthMeReloaded</artifactId>
-            <version>-SNAPSHOT</version>
-        </dependency>
-        -->
-
     </dependencies>
 
     <!-- ===================== BUILD ===================== -->
-
     <build>
         <plugins>
-            <!-- Compiler -->
+            <!-- Compiler Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
@@ -166,7 +147,7 @@
                 </configuration>
             </plugin>
 
-            <!-- Shade -->
+            <!-- Shade Plugin -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
@@ -184,7 +165,7 @@
                 </executions>
             </plugin>
 
-            <!-- Surefire -->
+            <!-- Surefire Plugin (для тестов) -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
